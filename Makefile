@@ -5,7 +5,7 @@ Minversion := $(shell date)
 BUILD_NODE_PAR = -ldflags "-X github.com/elastos/Elastos.ELA.SideChain/config.Version=$(VERSION)" #-race
 
 all:
-	$(GC)  $(BUILD_NODE_PAR) -o delta main.go
+	$(GC)  $(BUILD_NODE_PAR) -o dataprox main.go
 
 format:
 	$(GOFMT) -w main.go
